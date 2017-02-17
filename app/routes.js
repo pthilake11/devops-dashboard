@@ -1,6 +1,6 @@
-var express = require('express');
-var router = express.Router();
 //backend routing
+var stub = require("./stubs/stat1.json");
+
  module.exports = function(app, login) {
  
     // get all applications data
@@ -39,41 +39,40 @@ var router = express.Router();
      //get application data by id
      app.get('/api/application/:id', function(req, res) {
          //send stub mode
+
          var data1 = {
-             "statid": "1001",
-             "statname": "name1",
-             "trendid": "2001",
-             "trendname": "trend1"
+             "stats" : [
+                 {
+                     "id" : "01",
+                     "name" : "current bugs report"
+                 }
+             ],
+             "trends" : []
          };
 
          var data2 = {
-             "statid": "1002",
-             "statname": "name2",
-             "trendid": "2002",
-             "trendname": "trend2"
+             "stats" : [
+                 {
+                     "id" : "01",
+                     "name" : "current bugs report"
+                 }
+             ],
+             "trends" : [
+                 {
+                     "id" : "10",
+                     "name" : "bug report history"
+                 }
+             ]
          };
 
-         var data2 = {
-             "statid": "1003",
-             "statname": "name2",
-             "trendid": "2002",
-             "trendname": "trend2"
-         };
-
-         var data = {};
-         if(req.params.id === "101") {
-             data = data1;
-         } else if(req.params.id === "102") {
-             data = data2;
-         } else {
-             data = data3;
-         }
+         var data = data1;
          res.json(data);
      });
 
      //get application stat data by id, for specific application id
      app.get('/api/application/:id/stat/:statid', function(req, res) {
 
+           res.json(stub);
      });
 
      //get application trend data by id, for specific application id

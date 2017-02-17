@@ -1,0 +1,766 @@
+[
+  {
+    "_id": "58a6d44c77e5111c4854bbc1",
+    "Id": 296,
+    "methodName": "main",
+    "priority": "1",
+    "category": "STYLE",
+    "reportId": "repo-DLS_DEAD_LOCAL_STORE",
+    "sourceLine": {
+      "end": 50,
+      "start": 10
+    },
+    "__v": 0
+  },
+  {
+    "_id": "58a6dda10aade715fcfdee98",
+    "Id": 311,
+    "methodName": "main",
+    "priority": "1",
+    "category": "STYLE",
+    "reportId": "repo-DLS_DEAD_LOCAL_STORE",
+    "sourceLine": {
+      "end": 50,
+      "start": 10
+    },
+    "__v": 0
+  },
+  {
+    "_id": "58a6ddac32453830507c113f",
+    "Id": 326,
+    "methodName": "main",
+    "priority": "1",
+    "category": "STYLE",
+    "reportId": "repo-DLS_DEAD_LOCAL_STORE",
+    "sourceLine": {
+      "end": 50,
+      "start": 10
+    },
+    "__v": 0
+  },
+  {
+    "_id": "58a6ddd3b49d89317c8d6cdf",
+    "Id": 341,
+    "methodName": "main",
+    "priority": "1",
+    "category": "STYLE",
+    "reportId": "repo-DLS_DEAD_LOCAL_STORE",
+    "sourceLine": {
+      "end": 50,
+      "start": 10
+    },
+    "__v": 0
+  },
+  {
+    "_id": "58a6d44c77e5111c4854bbb7",
+    "Id": 286,
+    "methodName": "getOrderDate",
+    "priority": "2",
+    "category": "MALICIOUS_CODE",
+    "reportId": "repo-EI_EXPOSE_REP",
+    "sourceLine": {
+      "end": 311,
+      "start": 11
+    },
+    "__v": 0
+  },
+  {
+    "_id": "58a6d44c77e5111c4854bbb8",
+    "Id": 287,
+    "methodName": "setOrderDate",
+    "priority": "2",
+    "category": "MALICIOUS_CODE",
+    "reportId": "repo-EI_EXPOSE_REP2",
+    "sourceLine": {
+      "end": 311,
+      "start": 11
+    },
+    "__v": 0
+  },
+  {
+    "_id": "58a6d44c77e5111c4854bbb9",
+    "Id": 288,
+    "methodName": "updateQuantity",
+    "priority": "2",
+    "category": "PERFORMANCE",
+    "reportId": "repo-DM_NUMBER_CTOR",
+    "sourceLine": {
+      "end": 63,
+      "start": 21
+    },
+    "__v": 0
+  },
+  {
+    "_id": "58a6d44c77e5111c4854bbba",
+    "Id": 289,
+    "methodName": "getOrder",
+    "priority": "2",
+    "category": "PERFORMANCE",
+    "reportId": "repo-DM_NUMBER_CTOR",
+    "sourceLine": {
+      "end": 41,
+      "start": 17
+    },
+    "__v": 0
+  },
+  {
+    "_id": "58a6d44c77e5111c4854bbbb",
+    "Id": 290,
+    "methodName": "signon",
+    "priority": "2",
+    "category": "STYLE",
+    "reportId": "repo-RCN_REDUNDANT_NULLCHECK_OF_NONNULL_VALUE",
+    "sourceLine": {
+      "end": 243,
+      "start": 19
+    },
+    "__v": 0
+  },
+  {
+    "_id": "58a6d44c77e5111c4854bbbe",
+    "Id": 293,
+    "priority": "2",
+    "category": "STYLE",
+    "reportId": "repo-URF_UNREAD_PUBLIC_OR_PROTECTED_FIELD",
+    "sourceLine": {
+      "end": 67,
+      "start": 25
+    },
+    "__v": 0
+  },
+  {
+    "_id": "58a6d44c77e5111c4854bbbc",
+    "Id": 291,
+    "priority": "2",
+    "category": "STYLE",
+    "reportId": "repo-URF_UNREAD_PUBLIC_OR_PROTECTED_FIELD",
+    "sourceLine": {
+      "end": 67,
+      "start": 25
+    },
+    "__v": 0
+  },
+  {
+    "_id": "58a6d44c77e5111c4854bbbd",
+    "Id": 292,
+    "priority": "2",
+    "category": "STYLE",
+    "reportId": "repo-URF_UNREAD_PUBLIC_OR_PROTECTED_FIELD",
+    "sourceLine": {
+      "end": 67,
+      "start": 25
+    },
+    "__v": 0
+  },
+  {
+    "_id": "58a6d44c77e5111c4854bbc0",
+    "Id": 295,
+    "priority": "2",
+    "category": "PERFORMANCE",
+    "reportId": "repo-SIC_INNER_SHOULD_BE_STATIC",
+    "sourceLine": {
+      "end": 65,
+      "start": 50
+    },
+    "__v": 0
+  },
+  {
+    "_id": "58a6d44c77e5111c4854bbbf",
+    "Id": 294,
+    "methodName": "putAll",
+    "priority": "2",
+    "category": "PERFORMANCE",
+    "reportId": "repo-WMI_WRONG_MAP_ITERATOR",
+    "sourceLine": {
+      "end": 79,
+      "start": 11
+    },
+    "__v": 0
+  },
+  {
+    "_id": "58a6d44c77e5111c4854bbc5",
+    "Id": 300,
+    "methodName": "main",
+    "priority": "2",
+    "category": "BAD_PRACTICE",
+    "reportId": "repo-ODR_OPEN_DATABASE_RESOURCE",
+    "sourceLine": {
+      "end": 50,
+      "start": 10
+    },
+    "__v": 0
+  },
+  {
+    "_id": "58a6d44c77e5111c4854bbc2",
+    "Id": 297,
+    "methodName": "main",
+    "priority": "2",
+    "category": "SECURITY",
+    "reportId": "repo-DMI_CONSTANT_DB_PASSWORD",
+    "sourceLine": {
+      "end": 50,
+      "start": 10
+    },
+    "__v": 0
+  },
+  {
+    "_id": "58a6d44c77e5111c4854bbc3",
+    "Id": 298,
+    "methodName": "main",
+    "priority": "2",
+    "category": "EXPERIMENTAL",
+    "reportId": "repo-OBL_UNSATISFIED_OBLIGATION",
+    "sourceLine": {
+      "end": 50,
+      "start": 10
+    },
+    "__v": 0
+  },
+  {
+    "_id": "58a6d44c77e5111c4854bbc4",
+    "Id": 299,
+    "methodName": "main",
+    "priority": "2",
+    "category": "BAD_PRACTICE",
+    "reportId": "repo-ODR_OPEN_DATABASE_RESOURCE",
+    "sourceLine": {
+      "end": 50,
+      "start": 10
+    },
+    "__v": 0
+  },
+  {
+    "_id": "58a6dda10aade715fcfdee8e",
+    "Id": 301,
+    "methodName": "getOrderDate",
+    "priority": "2",
+    "category": "MALICIOUS_CODE",
+    "reportId": "repo-EI_EXPOSE_REP",
+    "sourceLine": {
+      "end": 311,
+      "start": 11
+    },
+    "__v": 0
+  },
+  {
+    "_id": "58a6dda10aade715fcfdee8f",
+    "Id": 302,
+    "methodName": "setOrderDate",
+    "priority": "2",
+    "category": "MALICIOUS_CODE",
+    "reportId": "repo-EI_EXPOSE_REP2",
+    "sourceLine": {
+      "end": 311,
+      "start": 11
+    },
+    "__v": 0
+  },
+  {
+    "_id": "58a6dda10aade715fcfdee90",
+    "Id": 303,
+    "methodName": "updateQuantity",
+    "priority": "2",
+    "category": "PERFORMANCE",
+    "reportId": "repo-DM_NUMBER_CTOR",
+    "sourceLine": {
+      "end": 63,
+      "start": 21
+    },
+    "__v": 0
+  },
+  {
+    "_id": "58a6dda10aade715fcfdee91",
+    "Id": 304,
+    "methodName": "getOrder",
+    "priority": "2",
+    "category": "PERFORMANCE",
+    "reportId": "repo-DM_NUMBER_CTOR",
+    "sourceLine": {
+      "end": 41,
+      "start": 17
+    },
+    "__v": 0
+  },
+  {
+    "_id": "58a6dda10aade715fcfdee92",
+    "Id": 305,
+    "methodName": "signon",
+    "priority": "2",
+    "category": "STYLE",
+    "reportId": "repo-RCN_REDUNDANT_NULLCHECK_OF_NONNULL_VALUE",
+    "sourceLine": {
+      "end": 243,
+      "start": 19
+    },
+    "__v": 0
+  },
+  {
+    "_id": "58a6dda10aade715fcfdee95",
+    "Id": 308,
+    "priority": "2",
+    "category": "STYLE",
+    "reportId": "repo-URF_UNREAD_PUBLIC_OR_PROTECTED_FIELD",
+    "sourceLine": {
+      "end": 67,
+      "start": 25
+    },
+    "__v": 0
+  },
+  {
+    "_id": "58a6dda10aade715fcfdee93",
+    "Id": 306,
+    "priority": "2",
+    "category": "STYLE",
+    "reportId": "repo-URF_UNREAD_PUBLIC_OR_PROTECTED_FIELD",
+    "sourceLine": {
+      "end": 67,
+      "start": 25
+    },
+    "__v": 0
+  },
+  {
+    "_id": "58a6dda10aade715fcfdee94",
+    "Id": 307,
+    "priority": "2",
+    "category": "STYLE",
+    "reportId": "repo-URF_UNREAD_PUBLIC_OR_PROTECTED_FIELD",
+    "sourceLine": {
+      "end": 67,
+      "start": 25
+    },
+    "__v": 0
+  },
+  {
+    "_id": "58a6dda10aade715fcfdee96",
+    "Id": 309,
+    "methodName": "putAll",
+    "priority": "2",
+    "category": "PERFORMANCE",
+    "reportId": "repo-WMI_WRONG_MAP_ITERATOR",
+    "sourceLine": {
+      "end": 79,
+      "start": 11
+    },
+    "__v": 0
+  },
+  {
+    "_id": "58a6dda10aade715fcfdee97",
+    "Id": 310,
+    "priority": "2",
+    "category": "PERFORMANCE",
+    "reportId": "repo-SIC_INNER_SHOULD_BE_STATIC",
+    "sourceLine": {
+      "end": 65,
+      "start": 50
+    },
+    "__v": 0
+  },
+  {
+    "_id": "58a6dda10aade715fcfdee9c",
+    "Id": 315,
+    "methodName": "main",
+    "priority": "2",
+    "category": "BAD_PRACTICE",
+    "reportId": "repo-ODR_OPEN_DATABASE_RESOURCE",
+    "sourceLine": {
+      "end": 50,
+      "start": 10
+    },
+    "__v": 0
+  },
+  {
+    "_id": "58a6dda10aade715fcfdee99",
+    "Id": 312,
+    "methodName": "main",
+    "priority": "2",
+    "category": "SECURITY",
+    "reportId": "repo-DMI_CONSTANT_DB_PASSWORD",
+    "sourceLine": {
+      "end": 50,
+      "start": 10
+    },
+    "__v": 0
+  },
+  {
+    "_id": "58a6dda10aade715fcfdee9a",
+    "Id": 313,
+    "methodName": "main",
+    "priority": "2",
+    "category": "EXPERIMENTAL",
+    "reportId": "repo-OBL_UNSATISFIED_OBLIGATION",
+    "sourceLine": {
+      "end": 50,
+      "start": 10
+    },
+    "__v": 0
+  },
+  {
+    "_id": "58a6dda10aade715fcfdee9b",
+    "Id": 314,
+    "methodName": "main",
+    "priority": "2",
+    "category": "BAD_PRACTICE",
+    "reportId": "repo-ODR_OPEN_DATABASE_RESOURCE",
+    "sourceLine": {
+      "end": 50,
+      "start": 10
+    },
+    "__v": 0
+  },
+  {
+    "_id": "58a6ddac32453830507c1135",
+    "Id": 316,
+    "methodName": "getOrderDate",
+    "priority": "2",
+    "category": "MALICIOUS_CODE",
+    "reportId": "repo-EI_EXPOSE_REP",
+    "sourceLine": {
+      "end": 311,
+      "start": 11
+    },
+    "__v": 0
+  },
+  {
+    "_id": "58a6ddac32453830507c1136",
+    "Id": 317,
+    "methodName": "setOrderDate",
+    "priority": "2",
+    "category": "MALICIOUS_CODE",
+    "reportId": "repo-EI_EXPOSE_REP2",
+    "sourceLine": {
+      "end": 311,
+      "start": 11
+    },
+    "__v": 0
+  },
+  {
+    "_id": "58a6ddac32453830507c1138",
+    "Id": 319,
+    "methodName": "getOrder",
+    "priority": "2",
+    "category": "PERFORMANCE",
+    "reportId": "repo-DM_NUMBER_CTOR",
+    "sourceLine": {
+      "end": 41,
+      "start": 17
+    },
+    "__v": 0
+  },
+  {
+    "_id": "58a6ddac32453830507c1137",
+    "Id": 318,
+    "methodName": "updateQuantity",
+    "priority": "2",
+    "category": "PERFORMANCE",
+    "reportId": "repo-DM_NUMBER_CTOR",
+    "sourceLine": {
+      "end": 63,
+      "start": 21
+    },
+    "__v": 0
+  },
+  {
+    "_id": "58a6ddac32453830507c1139",
+    "Id": 320,
+    "methodName": "signon",
+    "priority": "2",
+    "category": "STYLE",
+    "reportId": "repo-RCN_REDUNDANT_NULLCHECK_OF_NONNULL_VALUE",
+    "sourceLine": {
+      "end": 243,
+      "start": 19
+    },
+    "__v": 0
+  },
+  {
+    "_id": "58a6ddac32453830507c113a",
+    "Id": 321,
+    "priority": "2",
+    "category": "STYLE",
+    "reportId": "repo-URF_UNREAD_PUBLIC_OR_PROTECTED_FIELD",
+    "sourceLine": {
+      "end": 67,
+      "start": 25
+    },
+    "__v": 0
+  },
+  {
+    "_id": "58a6ddac32453830507c113b",
+    "Id": 322,
+    "priority": "2",
+    "category": "STYLE",
+    "reportId": "repo-URF_UNREAD_PUBLIC_OR_PROTECTED_FIELD",
+    "sourceLine": {
+      "end": 67,
+      "start": 25
+    },
+    "__v": 0
+  },
+  {
+    "_id": "58a6ddac32453830507c113c",
+    "Id": 323,
+    "priority": "2",
+    "category": "STYLE",
+    "reportId": "repo-URF_UNREAD_PUBLIC_OR_PROTECTED_FIELD",
+    "sourceLine": {
+      "end": 67,
+      "start": 25
+    },
+    "__v": 0
+  },
+  {
+    "_id": "58a6ddac32453830507c113d",
+    "Id": 324,
+    "methodName": "putAll",
+    "priority": "2",
+    "category": "PERFORMANCE",
+    "reportId": "repo-WMI_WRONG_MAP_ITERATOR",
+    "sourceLine": {
+      "end": 79,
+      "start": 11
+    },
+    "__v": 0
+  },
+  {
+    "_id": "58a6ddac32453830507c113e",
+    "Id": 325,
+    "priority": "2",
+    "category": "PERFORMANCE",
+    "reportId": "repo-SIC_INNER_SHOULD_BE_STATIC",
+    "sourceLine": {
+      "end": 65,
+      "start": 50
+    },
+    "__v": 0
+  },
+  {
+    "_id": "58a6ddac32453830507c1143",
+    "Id": 330,
+    "methodName": "main",
+    "priority": "2",
+    "category": "BAD_PRACTICE",
+    "reportId": "repo-ODR_OPEN_DATABASE_RESOURCE",
+    "sourceLine": {
+      "end": 50,
+      "start": 10
+    },
+    "__v": 0
+  },
+  {
+    "_id": "58a6ddac32453830507c1140",
+    "Id": 327,
+    "methodName": "main",
+    "priority": "2",
+    "category": "SECURITY",
+    "reportId": "repo-DMI_CONSTANT_DB_PASSWORD",
+    "sourceLine": {
+      "end": 50,
+      "start": 10
+    },
+    "__v": 0
+  },
+  {
+    "_id": "58a6ddac32453830507c1141",
+    "Id": 328,
+    "methodName": "main",
+    "priority": "2",
+    "category": "EXPERIMENTAL",
+    "reportId": "repo-OBL_UNSATISFIED_OBLIGATION",
+    "sourceLine": {
+      "end": 50,
+      "start": 10
+    },
+    "__v": 0
+  },
+  {
+    "_id": "58a6ddac32453830507c1142",
+    "Id": 329,
+    "methodName": "main",
+    "priority": "2",
+    "category": "BAD_PRACTICE",
+    "reportId": "repo-ODR_OPEN_DATABASE_RESOURCE",
+    "sourceLine": {
+      "end": 50,
+      "start": 10
+    },
+    "__v": 0
+  },
+  {
+    "_id": "58a6ddd3b49d89317c8d6cd5",
+    "Id": 331,
+    "methodName": "getOrderDate",
+    "priority": "2",
+    "category": "MALICIOUS_CODE",
+    "reportId": "repo-EI_EXPOSE_REP",
+    "sourceLine": {
+      "end": 311,
+      "start": 11
+    },
+    "__v": 0
+  },
+  {
+    "_id": "58a6ddd3b49d89317c8d6cd6",
+    "Id": 332,
+    "methodName": "setOrderDate",
+    "priority": "2",
+    "category": "MALICIOUS_CODE",
+    "reportId": "repo-EI_EXPOSE_REP2",
+    "sourceLine": {
+      "end": 311,
+      "start": 11
+    },
+    "__v": 0
+  },
+  {
+    "_id": "58a6ddd3b49d89317c8d6cd8",
+    "Id": 334,
+    "methodName": "getOrder",
+    "priority": "2",
+    "category": "PERFORMANCE",
+    "reportId": "repo-DM_NUMBER_CTOR",
+    "sourceLine": {
+      "end": 41,
+      "start": 17
+    },
+    "__v": 0
+  },
+  {
+    "_id": "58a6ddd3b49d89317c8d6cd7",
+    "Id": 333,
+    "methodName": "updateQuantity",
+    "priority": "2",
+    "category": "PERFORMANCE",
+    "reportId": "repo-DM_NUMBER_CTOR",
+    "sourceLine": {
+      "end": 63,
+      "start": 21
+    },
+    "__v": 0
+  },
+  {
+    "_id": "58a6ddd3b49d89317c8d6cd9",
+    "Id": 335,
+    "methodName": "signon",
+    "priority": "2",
+    "category": "STYLE",
+    "reportId": "repo-RCN_REDUNDANT_NULLCHECK_OF_NONNULL_VALUE",
+    "sourceLine": {
+      "end": 243,
+      "start": 19
+    },
+    "__v": 0
+  },
+  {
+    "_id": "58a6ddd3b49d89317c8d6cda",
+    "Id": 336,
+    "priority": "2",
+    "category": "STYLE",
+    "reportId": "repo-URF_UNREAD_PUBLIC_OR_PROTECTED_FIELD",
+    "sourceLine": {
+      "end": 67,
+      "start": 25
+    },
+    "__v": 0
+  },
+  {
+    "_id": "58a6ddd3b49d89317c8d6cdb",
+    "Id": 337,
+    "priority": "2",
+    "category": "STYLE",
+    "reportId": "repo-URF_UNREAD_PUBLIC_OR_PROTECTED_FIELD",
+    "sourceLine": {
+      "end": 67,
+      "start": 25
+    },
+    "__v": 0
+  },
+  {
+    "_id": "58a6ddd3b49d89317c8d6cdc",
+    "Id": 338,
+    "priority": "2",
+    "category": "STYLE",
+    "reportId": "repo-URF_UNREAD_PUBLIC_OR_PROTECTED_FIELD",
+    "sourceLine": {
+      "end": 67,
+      "start": 25
+    },
+    "__v": 0
+  },
+  {
+    "_id": "58a6ddd3b49d89317c8d6cdd",
+    "Id": 339,
+    "methodName": "putAll",
+    "priority": "2",
+    "category": "PERFORMANCE",
+    "reportId": "repo-WMI_WRONG_MAP_ITERATOR",
+    "sourceLine": {
+      "end": 79,
+      "start": 11
+    },
+    "__v": 0
+  },
+  {
+    "_id": "58a6ddd3b49d89317c8d6cde",
+    "Id": 340,
+    "priority": "2",
+    "category": "PERFORMANCE",
+    "reportId": "repo-SIC_INNER_SHOULD_BE_STATIC",
+    "sourceLine": {
+      "end": 65,
+      "start": 50
+    },
+    "__v": 0
+  },
+  {
+    "_id": "58a6ddd3b49d89317c8d6ce3",
+    "Id": 345,
+    "methodName": "main",
+    "priority": "2",
+    "category": "BAD_PRACTICE",
+    "reportId": "repo-ODR_OPEN_DATABASE_RESOURCE",
+    "sourceLine": {
+      "end": 50,
+      "start": 10
+    },
+    "__v": 0
+  },
+  {
+    "_id": "58a6ddd3b49d89317c8d6ce0",
+    "Id": 342,
+    "methodName": "main",
+    "priority": "2",
+    "category": "SECURITY",
+    "reportId": "repo-DMI_CONSTANT_DB_PASSWORD",
+    "sourceLine": {
+      "end": 50,
+      "start": 10
+    },
+    "__v": 0
+  },
+  {
+    "_id": "58a6ddd3b49d89317c8d6ce1",
+    "Id": 343,
+    "methodName": "main",
+    "priority": "2",
+    "category": "EXPERIMENTAL",
+    "reportId": "repo-OBL_UNSATISFIED_OBLIGATION",
+    "sourceLine": {
+      "end": 50,
+      "start": 10
+    },
+    "__v": 0
+  },
+  {
+    "_id": "58a6ddd3b49d89317c8d6ce2",
+    "Id": 344,
+    "methodName": "main",
+    "priority": "2",
+    "category": "BAD_PRACTICE",
+    "reportId": "repo-ODR_OPEN_DATABASE_RESOURCE",
+    "sourceLine": {
+      "end": 50,
+      "start": 10
+    },
+    "__v": 0
+  }
+]

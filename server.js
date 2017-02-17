@@ -32,12 +32,16 @@ app.use(passport.session());
 
 var initPassport = require('./passportInit');
 initPassport(passport);
-var authenticate = require('./app//models/authenticate')(passport);
 
-var loginctrl = require('./app/controllers/login')(authenticate);
+var authenticate = require('./app/models/authenticate.js');
+authenticate(passport);
+
+var loginctrl = require('./app/controllers/login.js');
+loginctrl(authenticate);
 
 // routes ==================================================
-require('./app/routes')(app,loginctrl); // configure our backend routes
+router = require('./app/routes'); // configure our backend routes
+router(app,loginctrl);
 
 // start app ===============================================
 // startup our app at http://localhost:1111
