@@ -7,11 +7,31 @@
     
 </div>
 
-<div class="dropdown">
-    <a href="#" data-toggle="dropdown" class="dropdown-toggle">Dropdown <b class="caret"></b></a>
-    <ul class="dropdown-menu">
-        <li><a href="/details">Details</a></li>
-    </ul>
-</div>
-  
+<!-- init function to get applications for portfolio -->
+<div data-ng-init="getApplications()"></div>
+
+<div class="container">
+<table class="table table-striped">
+
+    <thead>
+    <tr>
+        <th>
+            Project
+        </th>
+        <th>
+            Build status
+        </th>
+        <th>
+            Build statistics
+        </th>
+    </tr>
+    </thead>
+    <tbody ng-repeat="application in applications">
+        <tr>
+            <td><a href="/details/{{application.id}}">{{application.name}}</a></td>
+            <td>{{application.status}}</td>
+            <td>{{application.successBuilds}} of {{application.totalBuilds}} passed</td>
+        </tr>
+    </tbody>
+</table>
 </div>

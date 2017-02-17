@@ -1,7 +1,7 @@
 // public/js/controllers/MainCtrl.js
 angular.module('DetailsCtrl', []).controller('DetailsController', function($scope) {
 
-    $scope.copyright = '© Copyright 2017. AutoBots Team';
+    //$scope.copyright = '© Copyright 2017. AutoBots Team';
 
     $scope.chart1 = {
         chart: {
@@ -60,14 +60,24 @@ angular.module('DetailsCtrl', []).controller('DetailsController', function($scop
 
     $scope.data = [
         {
-            key: "lines covered",
-            y: 700,
-            color : "green"
+            key: "P1",
+            y: 3,
+            color : "red"
         },
         {
-            key: "lines ignored",
-            y: 300,
-            color: "lightgreen"
+            key: "P2",
+            y: 2,
+            color: "yellow"
+        },
+        {
+            key: "P3",
+            y: 5,
+            color : "lightgreen"
+        },
+        {
+            key: "P4",
+            y: 10,
+            color: "green"
         }
     ];
 

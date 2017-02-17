@@ -17,7 +17,7 @@
             controller: 'MainController'
         })
         
-        .when('/details', {
+        .when('/details/:applicationId', {
             templateUrl: 'views/details.html',
             controller: 'DetailsController'
         });
