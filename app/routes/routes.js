@@ -2,7 +2,6 @@ var express = require('express');
 var router = express.Router();
 //backend routing
  module.exports = function(app, login) {
- 
     // get all applications data
      app.get('/api/applications', function(req, res) {
          //send stub
@@ -86,7 +85,12 @@ var router = express.Router();
     });
 
      app.post('/api/login', function(req, res) {
-         return login.signin(req);
+         console.log(login);
+         res.json(login(req, res));
+     });
+
+     app.put('/bugs', function(req, res) {
+         res.json()
      });
 
 }

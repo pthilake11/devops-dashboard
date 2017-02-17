@@ -10,12 +10,13 @@
     "ejs": "~2.5.2",
     "express": "~4.14.0",
     "express-session": "^1.14.2",
+    "method-override": "~2.0.2",
     "mongoose": "^4.7.5",
     "mongoose-auto-increment": "^5.0.1",
     "morgan": "~1.7.0",
-    "method-override": "~2.0.2",
     "passport": "^0.3.2",
     "passport-local": "^1.0.0",
+    "promise": "^7.1.1",
     "serve-favicon": "~2.3.0",
     "xml2js": "*"
   }
