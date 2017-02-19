@@ -36,12 +36,12 @@ initPassport(passport);
 var authenticate = require('./app/models/authenticate.js');
 authenticate(passport);
 
-var loginctrl = require('./app/controllers/login.js');
-loginctrl(authenticate);
+//var loginctrl = require('./app/controllers/login.js');
+//loginctrl(authenticate);
 
 // routes ==================================================
 router = require('./app/routes'); // configure our backend routes
-router(app,loginctrl);
+router(app);
 
 // start app ===============================================
 // startup our app at http://localhost:1111

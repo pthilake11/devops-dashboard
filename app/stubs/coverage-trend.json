@@ -1,0 +1,38 @@
+[
+  {
+    "reportId": "COV20170218230436",
+    "reportNumber": "1",
+    "totalValidLines": "3699",
+    "linesCovered": "1800",
+    "percentCovered": 48.7,
+    "percentUncovered": 51.3,
+    "lastUpdated": "2017-02-11T18:36:36"
+  },
+  {
+    "reportId": "COV20170218230436",
+    "reportNumber": "2",
+    "totalValidLines": "3699",
+    "linesCovered": "1800",
+    "percentCovered": 54,
+    "percentUncovered": 46,
+    "lastUpdated": "2017-02-12T18:36:36"
+  },
+  {
+    "reportId": "COV20170218230436",
+    "reportNumber": "3",
+    "totalValidLines": "3699",
+    "linesCovered": "1800",
+    "percentCovered": 63,
+    "percentUncovered": 37,
+    "lastUpdated": "2017-02-13T18:36:36"
+  },
+  {
+    "reportId": "COV20170218230436",
+    "reportNumber": "4",
+    "totalValidLines": "3699",
+    "linesCovered": "1800",
+    "percentCovered": 72,
+    "percentUncovered": 28,
+    "lastUpdated": "2017-02-14T18:36:36"
+  }
+]

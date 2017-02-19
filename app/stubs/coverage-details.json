@@ -1,0 +1,186 @@
+{
+  "reportId": "COV20170218230436",
+  "reportNumber": 1,
+  "packages": [
+    {
+      "name": "com.infy.src.utility",
+      "numberOfLines": 36,
+      "linesCovered": 18,
+      "linesUncovered": 18,
+      "classes": [
+        {
+          "name": "com.ibatis.jpetstore.domain.Account",
+          "fileName": "com/ibatis/jpetstore/domain/Account.java",
+          "numberOfLines": 18,
+          "linesCovered": 9,
+          "linesUncovered": 9,
+          "methods": [
+            {
+              "name": "init",
+              "numberOfLines": 9,
+              "linesCovered": 4,
+              "linesUncovered": 5,
+              "lines": [
+                {
+                  "number": 36,
+                  "hits": 2
+                },
+                {
+                  "number": 39,
+                  "hits": 0
+                }
+              ]
+            },
+            {
+              "name": "getStatus",
+              "numberOfLines": 9,
+              "linesCovered": 4,
+              "linesUncovered": 5,
+              "lines": [
+                {
+                  "number": 36,
+                  "hits": 2
+                },
+                {
+                  "number": 39,
+                  "hits": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "com.ibatis.jpetstore.domain.Order",
+          "fileName": "com/ibatis/jpetstore/domain/Order.java",
+          "numberOfLines": 18,
+          "linesCovered": 9,
+          "linesUncovered": 9,
+          "methods": [
+            {
+              "name": "init",
+              "numberOfLines": 9,
+              "linesCovered": 4,
+              "linesUncovered": 5,
+              "lines": [
+                {
+                  "number": 36,
+                  "hits": 2
+                },
+                {
+                  "number": 39,
+                  "hits": 0
+                }
+              ]
+            },
+            {
+              "name": "getStatus",
+              "numberOfLines": 9,
+              "linesCovered": 4,
+              "linesUncovered": 5,
+              "lines": [
+                {
+                  "number": 36,
+                  "hits": 2
+                },
+                {
+                  "number": 39,
+                  "hits": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "com.infy.src.module",
+      "numberOfLines": 36,
+      "linesCovered": 18,
+      "linesUncovered": 18,
+      "classes": [
+        {
+          "name": "com.ibatis.jpetstore.domain.Account",
+          "fileName": "com/ibatis/jpetstore/domain/Account.java",
+          "numberOfLines": 18,
+          "linesCovered": 9,
+          "linesUncovered": 9,
+          "methods": [
+            {
+              "name": "init",
+              "numberOfLines": 9,
+              "linesCovered": 4,
+              "linesUncovered": 5,
+              "lines": [
+                {
+                  "number": 36,
+                  "hits": 2
+                },
+                {
+                  "number": 39,
+                  "hits": 0
+                }
+              ]
+            },
+            {
+              "name": "getStatus",
+              "numberOfLines": 9,
+              "linesCovered": 4,
+              "linesUncovered": 5,
+              "lines": [
+                {
+                  "number": 36,
+                  "hits": 2
+                },
+                {
+                  "number": 39,
+                  "hits": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "com.ibatis.jpetstore.domain.Order",
+          "fileName": "com/ibatis/jpetstore/domain/Order.java",
+          "numberOfLines": 18,
+          "linesCovered": 9,
+          "linesUncovered": 9,
+          "methods": [
+            {
+              "name": "init",
+              "numberOfLines": 9,
+              "linesCovered": 4,
+              "linesUncovered": 5,
+              "lines": [
+                {
+                  "number": 36,
+                  "hits": 2
+                },
+                {
+                  "number": 39,
+                  "hits": 0
+                }
+              ]
+            },
+            {
+              "name": "getStatus",
+              "numberOfLines": 9,
+              "linesCovered": 4,
+              "linesUncovered": 5,
+              "lines": [
+                {
+                  "number": 36,
+                  "hits": 2
+                },
+                {
+                  "number": 39,
+                  "hits": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

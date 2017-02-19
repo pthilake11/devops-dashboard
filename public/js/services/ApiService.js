@@ -1,25 +1,25 @@
 angular.module('ApiService', []).factory('ApiService', ['$http', '$q', function ($http, $q) {
     return {
 
-    getApplications : function()
-    {
-        return $http.get('/api/applications');
-    },
+        getPortfolio: function (userId) {
+            return $http.get('/api/portfolio/' + userId);
+        },
 
-    getApplicationById : function(appId)
-    {
-        return $http.get('/api/application/'+ appId);
-    },
+        getApplications: function () {
+            return $http.get('/api/applications');
+        },
 
-     getStatsById : function(appId,statId)
-    {
-        return $http.get('/api/application/'+ appId + '/stat/'+ statId);
-    },
+        getApplicationById: function (appId) {
+            return $http.get('/api/application/' + appId);
+        },
 
-    getTrendsById : function(appId,trendId)
-    {
-        return $http.get('/api/application/'+ appId +'/trend/'+ trendId);
+        getStatsById: function (appId, statId) {
+            return $http.get('/api/application/' + appId + '/stat/' + statId);
+        },
+
+        getTrendsById: function (appId, trendId) {
+            return $http.get('/api/application/' + appId + '/trend/' + trendId);
+        }
+
     }
-
-}
 }]);

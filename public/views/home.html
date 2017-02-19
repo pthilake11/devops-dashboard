@@ -8,10 +8,34 @@
 </div>
 
 <!-- init function to get applications for portfolio -->
-<div data-ng-init="getApplications()"></div>
+<div data-ng-init="getPortfolio()"></div>
+
+<div class="container theme-showcase">
+    <nav class="navbar navbar-inverse">
+        <div class="container">
+            <div class="navbar-header navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Portfolios <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li ng-repeat="portfolio in portfolios" ng-bind-html-unsafe="portfolio.name" >
+                                <a id="{{portfolio.id}}" ng-href='#' ng-click='refresh($event)'>
+                                    {{ portfolio.name }}
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div>
+    </nav>
+</div>
 
 <div class="container">
-<table class="table table-striped">
+    <div class="alert alert-success" role="alert" ng-show="!showTable">
+        <strong>Welcome back!</strong> Please choose a Porfolio from the drop down menu.
+    </div>
+<table class="table table-striped" ng-show="showTable">
 
     <thead>
     <tr>
@@ -21,16 +45,17 @@
         <th>
             Build status
         </th>
-        <th>
+       <!-- <th>
             Build statistics
-        </th>
+        </th>-->
     </tr>
     </thead>
     <tbody ng-repeat="application in applications">
         <tr>
             <td><a href="/details/{{application.id}}">{{application.name}}</a></td>
-            <td>{{application.status}}</td>
-            <td>{{application.successBuilds}} of {{application.totalBuilds}} passed</td>
+            <td>
+                <a ng-class="{success: (application.status == 'Pass'), failed: (application.status != 'Pass')}"></a>
+                {{application.status}}</td>
         </tr>
     </tbody>
 </table>
