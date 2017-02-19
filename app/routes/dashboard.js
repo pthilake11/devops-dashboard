@@ -20,10 +20,28 @@ module.exports = function(model) {
         }
     });
     router.get('/bugs', function(req, res) {
-        var data = {};
         model.fetchBugs().then(function(response) {
             res.json(response);
         });
     });
+
+    router.get('/coverage', function(req, res) {
+        model.fetchCoverage().then(function(response) {
+            console.log(222, response)
+            res.json(response);
+        });
+
+    });
+
+    router.post('/coverage', function(req, res) {
+        var success = model.insertCoverage();
+        if(success) {
+            res.send({code: 200, state:'success', description: 'data inserted successfully'} );
+        } else {
+            res.send({code: 500, state: 'failure', user: null, message: 'data insertion failed'});
+        }
+
+    });
+
     return router;
 }

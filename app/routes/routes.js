@@ -1,9 +1,9 @@
 var express = require('express');
 var router = express.Router();
 //backend routing
- module.exports = function(app, login) {
+ module.exports = function(passport) {
     // get all applications data
-     app.get('/api/applications', function(req, res) {
+     router.get('/api/applications', function(req, res) {
          //send stub
          res.json(
              [
@@ -36,7 +36,7 @@ var router = express.Router();
      });
 
      //get application data by id
-     app.get('/api/application/:id', function(req, res) {
+     router.get('/api/application/:id', function(req, res) {
          //send stub mode
          var data1 = {
              "statid": "1001",
@@ -71,26 +71,30 @@ var router = express.Router();
      });
 
      //get application stat data by id, for specific application id
-     app.get('/api/application/:id/stat/:statid', function(req, res) {
+     router.get('/api/application/:id/stat/:statid', function(req, res) {
 
      });
 
      //get application trend data by id, for specific application id
-     app.get('/api/application/:id/trend/:trendid', function(req, res) {
+     router.get('/api/application/:id/trend/:trendid', function(req, res) {
 
      });
 
-    app.get('*', function(req, res) {
-        res.sendfile('./public/views/index.html'); // load our public/index.html file
-    });
+    //  router.get('*', function(req, res) {
+    //     res.sendfile('./public/views/index.html'); // load our public/index.html file
+    // });
+     router.post('/login',passport.authenticate('login', {
+         successRedirect: '/api/success',
+         failureRedirect: '/api/failure',
+         session: false
+     }));
 
-     app.post('/api/login', function(req, res) {
-         console.log(login);
-         res.json(login(req, res));
+     router.get('/success', function(req, res) {
+         res.send({state:'success'} );
+     });
+     router.get('/failure', function(req, res) {
+         res.send({state:'failure', user: null, message: 'invalid username'});
      });
 
-     app.put('/bugs', function(req, res) {
-         res.json()
-     });
-
+     return router;
 }

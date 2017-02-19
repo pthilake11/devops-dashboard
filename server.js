@@ -5,12 +5,21 @@ var passport = require('passport');
 var session = require('express-session');
 var cookieParser = require('cookie-parser');
 var mongoose = require('mongoose');
-require('./app/models/model.js');
+// require('./app/models/model.js');
 require('./app/data/dashboard.js');
 var dashboardModel = require('./app/models/dashboard.js');
 console.log(1);
 var dashboard = require('./app/routes/dashboard')(dashboardModel)
 console.log(2);
+var initPassport = require('./passportInit');
+initPassport(passport);
+// console.log(1);
+var authenticate = require('./app/models/authenticate.js');
+authenticate(passport);
+// var loginctrl = require('./app/controllers/login');
+// loginctrl(authenticate);
+// // routes ==================================================
+var authRoutes = require('./app/routes/routes')(passport);
 var port = 1111;
 var app = express();
 // get all data/stuff of the body (POST) parameters
@@ -34,20 +43,8 @@ app.use(cookieParser());
 app.use(passport.initialize());
 app.use(passport.session());
 app.use('/application', dashboard);
+app.use('/api', authRoutes);
 
-var initPassport = require('./passportInit');
-initPassport(passport);
-console.log(1);
-var authenticate = require('./app/models/authenticate');
-authenticate(passport);
-
-console.log(authenticate);
-var loginctrl = require('./app/controllers/login');
-loginctrl(authenticate);
-
-// routes ==================================================
-var test = require('./app/routes/routes');
-test(app,loginctrl);// configure our backend routes
 
 // start app ===============================================
 // startup our app at http://localhost:1111
