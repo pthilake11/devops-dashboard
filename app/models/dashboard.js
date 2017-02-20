@@ -10,7 +10,6 @@ const path = require('path');
 module.exports.insertBugs = function() {
     return new Promise(function(resolve,reject) {
         parseXml('/bugs', function (response) {
-            console.log(response);
             return parseBugs(response);
         });
     });
@@ -110,30 +109,30 @@ function isEmptyObject(obj) {
     return true;
 }
 
-module.exports.fetchCoverage = function() {
-
+module.exports.fetchCoverage = function(appId) {
     return new Promise(function(resolve,reject) {
-        coverage.find(function(err, details){
+        coverage.find({APPID: appId}, function(err, details){
             if (err) {
                 reject(err);
             }
-            // var response = parseResponseForPriority(details);
-            resolve(details);
+            if (!isEmptyObject(details)) {
+                resolve(details);
+            }
         });
     });
 };
 
-module.exports.insertCoverage = function() {
+module.exports.insertCoverage = function(appId) {
     return new Promise(function(resolve,reject) {
         parseXml('/coverage', function (response) {
-            return parseCoverage(response);
+            return parseCoverage(appId, response);
         });
     });
 };
 
-var parseCoverage = function(data) {
+var parseCoverage = function(appId, data) {
     var coverageReport = new coverage();
-    masterCoverage = data.coverage.$;
+    coverageReport.APPID = appId;
     coverageReport.LASTUPDATED = data.coverage.$.timestamp;
     coverageReport.TOTALLINES = data.coverage.$['lines-valid'];
     coverageReport.LINESCOVERED = data.coverage.$['lines-covered'];
@@ -170,7 +169,6 @@ var parseCoverage = function(data) {
         parsedPackages.push(parsedPackage);
     }
     coverageReport.PACKAGES = parsedPackages;
-    console.log(coverageReport);
     coverageReport.save(function (err, postData) {
         if (err) {
             return ;

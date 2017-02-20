@@ -4,11 +4,9 @@ var router = express.Router();
 
 module.exports = function(model) {
     router.get('/success', function(req, res) {
-        console.log(1111);
         res.send({state:'success', user: req.user ? req.user : null} );
     });
     router.get('/failure', function(req, res) {
-        console.log(222222);
         res.send({state:'failure', user: null, message: 'invalid username'});
     });
     router.post('/bugs', function(req, res) {
@@ -25,16 +23,15 @@ module.exports = function(model) {
         });
     });
 
-    router.get('/coverage', function(req, res) {
-        model.fetchCoverage().then(function(response) {
-            console.log(222, response)
+    router.get('/coverage/:APPID/', function(req, res) {
+        model.fetchCoverage(req.params.APPID).then(function(response) {
             res.json(response);
         });
 
     });
 
     router.post('/coverage', function(req, res) {
-        var success = model.insertCoverage();
+        var success = model.insertCoverage(req.body.APPID);
         if(success) {
             res.send({code: 200, state:'success', description: 'data inserted successfully'} );
         } else {
