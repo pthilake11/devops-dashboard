@@ -29,6 +29,7 @@ module.exports = function(model) {
           model.fetchCoverage(req.params.APPID).then(function(response) {
             res.json(response);
         });
+    }
     });
 
 
