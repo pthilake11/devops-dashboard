@@ -1,0 +1,33 @@
+{
+  "reportId": "BUG20170219112236",
+  "reportNumber": 1,
+  "totalBugs": 6,
+  "priorities": [
+    {
+      "name": "P1",
+      "count": 1
+    },
+    {
+      "name": "P2",
+      "count": 2
+    },
+    {
+      "name": "P3",
+      "count": 2
+    },
+    {
+      "name": "P4",
+      "count": 1
+    }
+  ],
+  "categories": [
+    {
+      "name": "Malicious code",
+      "count": 2
+    },
+    {
+      "name": "Experimental code",
+      "count": 4
+    }
+  ]
+}

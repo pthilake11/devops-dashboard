@@ -1,0 +1,326 @@
+{
+  "userId": "usr1001",
+  "userName": "User 1001",
+  "role": "developer",
+  "portfolios": [
+    {
+      "id": "PF101",
+      "name": "Portfolio 101",
+      "applications": [
+        {
+          "id": "APP1001",
+          "name": "Application 1001",
+          "status": "Pass",
+          "metricsSummary": [
+            {
+              "metricId": "MTRC101",
+              "metricName": "Coverage",
+              "displayName": "Latest coverage status",
+              "RGBStatus": 1
+            },
+            {
+              "metricId": "MTRC102",
+              "metricName": "Check style",
+              "displayName": "Latest check style status",
+              "RGBStatus": 2
+            },
+            {
+              "metricId": "MTRC103",
+              "metricName": "Bugs report",
+              "displayName": "Latest bugs report status",
+              "RGBStatus": 3
+            }
+          ]
+        },
+        {
+          "id": "APP1002",
+          "name": "Application 1002",
+          "status" : "Fail",
+          "metricsSummary": [
+            {
+              "metricId": "MTRC101",
+              "metricName": "Coverage",
+              "displayName": "Latest coverage status",
+              "RGBStatus": 1
+            },
+            {
+              "metricId": "MTRC102",
+              "metricName": "Check style",
+              "displayName": "Latest check style status",
+              "RGBStatus": 2
+            },
+            {
+              "metricId": "MTRC103",
+              "metricName": "Bugs report",
+              "displayName": "Latest bugs report status",
+              "RGBStatus": 3
+            }
+          ]
+        },
+        {
+          "id": "APP1003",
+          "name": "Application 1003",
+          "status": "Pass",
+          "metricsSummary": [
+            {
+              "metricId": "MTRC101",
+              "metricName": "Coverage",
+              "displayName": "Latest coverage status",
+              "RGBStatus": 1
+            },
+            {
+              "metricId": "MTRC102",
+              "metricName": "Check style",
+              "displayName": "Latest check style status",
+              "RGBStatus": 2
+            },
+            {
+              "metricId": "MTRC103",
+              "metricName": "Bugs report",
+              "displayName": "Latest bugs report status",
+              "RGBStatus": 3
+            }
+          ]
+        },
+        {
+          "id": "APP1004",
+          "name": "Application 1004",
+          "status": "Pass",
+          "metricsSummary": [
+            {
+              "metricId": "MTRC101",
+              "metricName": "Coverage",
+              "displayName": "Latest coverage status",
+              "RGBStatus": 1
+            },
+            {
+              "metricId": "MTRC102",
+              "metricName": "Check style",
+              "displayName": "Latest check style status",
+              "RGBStatus": 2
+            },
+            {
+              "metricId": "MTRC103",
+              "metricName": "Bugs report",
+              "displayName": "Latest bugs report status",
+              "RGBStatus": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PF102",
+      "name": "Portfolio 102",
+      "applications": [
+        {
+          "id": "APP1001",
+          "name": "Application 1001",
+          "status" : "Pass",
+          "metricsSummary": [
+            {
+              "metricId": "MTRC101",
+              "metricName": "Coverage",
+              "displayName": "Latest coverage status",
+              "RGBStatus": 1
+            },
+            {
+              "metricId": "MTRC102",
+              "metricName": "Check style",
+              "displayName": "Latest check style status",
+              "RGBStatus": 2
+            },
+            {
+              "metricId": "MTRC103",
+              "metricName": "Bugs report",
+              "displayName": "Latest bugs report status",
+              "RGBStatus": 3
+            }
+          ]
+        },
+        {
+          "id": "APP1002",
+          "name": "Application 1002",
+          "status" : "Pass",
+          "metricsSummary": [
+            {
+              "metricId": "MTRC101",
+              "metricName": "Coverage",
+              "displayName": "Latest coverage status",
+              "RGBStatus": 1
+            },
+            {
+              "metricId": "MTRC102",
+              "metricName": "Check style",
+              "displayName": "Latest check style status",
+              "RGBStatus": 2
+            },
+            {
+              "metricId": "MTRC103",
+              "metricName": "Bugs report",
+              "displayName": "Latest bugs report status",
+              "RGBStatus": 3
+            }
+          ]
+        },
+        {
+          "id": "APP1003",
+          "name": "Application 1003",
+          "status" : "Pass",
+          "metricsSummary": [
+            {
+              "metricId": "MTRC101",
+              "metricName": "Coverage",
+              "displayName": "Latest coverage status",
+              "RGBStatus": 1
+            },
+            {
+              "metricId": "MTRC102",
+              "metricName": "Check style",
+              "displayName": "Latest check style status",
+              "RGBStatus": 2
+            },
+            {
+              "metricId": "MTRC103",
+              "metricName": "Bugs report",
+              "displayName": "Latest bugs report status",
+              "RGBStatus": 3
+            }
+          ]
+        },
+        {
+          "id": "APP1004",
+          "name": "Application 1004",
+          "status" : "Pass",
+          "metricsSummary": [
+            {
+              "metricId": "MTRC101",
+              "metricName": "Coverage",
+              "displayName": "Latest coverage status",
+              "RGBStatus": 1
+            },
+            {
+              "metricId": "MTRC102",
+              "metricName": "Check style",
+              "displayName": "Latest check style status",
+              "RGBStatus": 2
+            },
+            {
+              "metricId": "MTRC103",
+              "metricName": "Bugs report",
+              "displayName": "Latest bugs report status",
+              "RGBStatus": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PF103",
+      "name": "Portfolio 103",
+      "status" : "Pass",
+      "applications": [
+        {
+          "id": "APP1001",
+          "name": "Application 1001",
+          "status" : "Fail",
+          "metricsSummary": [
+            {
+              "metricId": "MTRC101",
+              "metricName": "Coverage",
+              "displayName": "Latest coverage status",
+              "RGBStatus": 1
+            },
+            {
+              "metricId": "MTRC102",
+              "metricName": "Check style",
+              "displayName": "Latest check style status",
+              "RGBStatus": 2
+            },
+            {
+              "metricId": "MTRC103",
+              "metricName": "Bugs report",
+              "displayName": "Latest bugs report status",
+              "RGBStatus": 3
+            }
+          ]
+        },
+        {
+          "id": "APP1002",
+          "name": "Application 1002",
+          "status" : "Pass",
+          "metricsSummary": [
+            {
+              "metricId": "MTRC101",
+              "metricName": "Coverage",
+              "displayName": "Latest coverage status",
+              "RGBStatus": 1
+            },
+            {
+              "metricId": "MTRC102",
+              "metricName": "Check style",
+              "displayName": "Latest check style status",
+              "RGBStatus": 2
+            },
+            {
+              "metricId": "MTRC103",
+              "metricName": "Bugs report",
+              "displayName": "Latest bugs report status",
+              "RGBStatus": 3
+            }
+          ]
+        },
+        {
+          "id": "APP1003",
+          "name": "Application 1003",
+          "status" : "Pass",
+          "metricsSummary": [
+            {
+              "metricId": "MTRC101",
+              "metricName": "Coverage",
+              "displayName": "Latest coverage status",
+              "RGBStatus": 1
+            },
+            {
+              "metricId": "MTRC102",
+              "metricName": "Check style",
+              "displayName": "Latest check style status",
+              "RGBStatus": 2
+            },
+            {
+              "metricId": "MTRC103",
+              "metricName": "Bugs report",
+              "displayName": "Latest bugs report status",
+              "RGBStatus": 3
+            }
+          ]
+        },
+        {
+          "id": "APP1004",
+          "name": "Application 1004",
+          "status" : "Pass",
+          "metricsSummary": [
+            {
+              "metricId": "MTRC101",
+              "metricName": "Coverage",
+              "displayName": "Latest coverage status",
+              "RGBStatus": 1
+            },
+            {
+              "metricId": "MTRC102",
+              "metricName": "Check style",
+              "displayName": "Latest check style status",
+              "RGBStatus": 2
+            },
+            {
+              "metricId": "MTRC103",
+              "metricName": "Bugs report",
+              "displayName": "Latest bugs report status",
+              "RGBStatus": 3
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

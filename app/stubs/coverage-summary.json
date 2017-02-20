@@ -1,0 +1,9 @@
+{
+  "reportId": "COV20170218230436",
+  "reportNumber": 1,
+  "totalValidLines": "3699",
+  "linesCovered": "1800",
+  "percentCovered": 48.7,
+  "percentUncovered": 51.3,
+  "lastUpdated": "2017-02-18T18:36:36"
+}

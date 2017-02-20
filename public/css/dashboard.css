@@ -1,0 +1,17 @@
+.success {
+    content:url("https://maxcdn.icons8.com/Color/PNG/24/Very_Basic/checked-24.png");
+    width :"24px";
+    title: "Checked";
+}
+
+.failed {
+    content:url("https://maxcdn.icons8.com/Color/PNG/24/Very_Basic/cancel-24.png");
+    width :"24px";
+    title: "failed";
+}
+
+.loading {
+    content:url("https://maxcdn.icons8.com/Color/PNG/96/User_Interface/spinner_frame_8-96.png");
+    width :"96px";
+    title: "loading";
+}
