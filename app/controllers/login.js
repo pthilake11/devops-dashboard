@@ -5,6 +5,7 @@
 module.exports = function(authenticate){
     console.log('im here');
      var signin = function(req) {
+         console.log(1231231);
          return authenticate.login(req);
      };
 }

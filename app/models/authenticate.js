@@ -3,10 +3,10 @@
  */
 module.exports = function(passport){
 
-    var login = function(req) {
-        passport.authenticate('login', {
-            successRedirect: '/portfolio',
-            failureRedirect: '/'
+    module.exports.login = function(req,res) {
+        console.log(req.body);
+        passport.authenticate('login', function(req, res) {
+            console.log('inside here');
         });
     };
 }
