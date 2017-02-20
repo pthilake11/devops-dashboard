@@ -9,6 +9,9 @@ angular.module('MainCtrl', []).controller('MainController', ['$scope','ApiServic
     $scope.getPortfolio = function() {
         ApiService.getPortfolio($rootScope.userid).then(function(response) {
             $scope.portfolios = response.data.portfolios;
+        },function(failure){
+            console.log('error while retrieving portfolio data' + failure);
+            $scope.failure = true;
         });
     };
 

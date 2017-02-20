@@ -1,0 +1,167 @@
+[
+  {
+    "reportId": "BUG20170219112236",
+    "reportNumber": 1,
+    "totalBugs": 6,
+    "priorities": [
+      {
+        "priority": "P1",
+        "count": 1
+      },
+      {
+        "priority": "P2",
+        "count": 2
+      },
+      {
+        "priority": "P3",
+        "count": 2
+      },
+      {
+        "priority": "P4",
+        "count": 1
+      }
+    ],
+    "categories": [
+      {
+        "category": "Malicious code",
+        "count": 2
+      },
+      {
+        "category": "Experimental code",
+        "count": 4
+      }
+    ]
+  },
+  {
+    "reportId": "BUG20170219152236",
+    "reportNumber": 1,
+    "totalBugs": 6,
+    "priorities": [
+      {
+        "priority": "P1",
+        "count": 1
+      },
+      {
+        "priority": "P2",
+        "count": 2
+      },
+      {
+        "priority": "P3",
+        "count": 2
+      },
+      {
+        "priority": "P4",
+        "count": 1
+      }
+    ],
+    "categories": [
+      {
+        "category": "Malicious code",
+        "count": 2
+      },
+      {
+        "category": "Experimental code",
+        "count": 4
+      }
+    ]
+  },
+  {
+    "reportId": "BUG20170219163936",
+    "reportNumber": 1,
+    "totalBugs": 6,
+    "priorities": [
+      {
+        "priority": "P1",
+        "count": 1
+      },
+      {
+        "priority": "P2",
+        "count": 2
+      },
+      {
+        "priority": "P3",
+        "count": 2
+      },
+      {
+        "priority": "P4",
+        "count": 1
+      }
+    ],
+    "categories": [
+      {
+        "category": "Malicious code",
+        "count": 2
+      },
+      {
+        "category": "Experimental code",
+        "count": 4
+      }
+    ]
+  },
+  {
+    "reportId": "BUG20170219180936",
+    "reportNumber": 1,
+    "totalBugs": 6,
+    "priorities": [
+      {
+        "priority": "P1",
+        "count": 1
+      },
+      {
+        "priority": "P2",
+        "count": 2
+      },
+      {
+        "priority": "P3",
+        "count": 2
+      },
+      {
+        "priority": "P4",
+        "count": 1
+      }
+    ],
+    "categories": [
+      {
+        "category": "Malicious code",
+        "count": 2
+      },
+      {
+        "category": "Experimental code",
+        "count": 4
+      }
+    ]
+  },
+  {
+    "reportId": "BUG20170219184536",
+    "reportNumber": 1,
+    "totalBugs": 6,
+    "priorities": [
+      {
+        "priority": "P1",
+        "count": 1
+      },
+      {
+        "priority": "P2",
+        "count": 2
+      },
+      {
+        "priority": "P3",
+        "count": 2
+      },
+      {
+        "priority": "P4",
+        "count": 1
+      }
+    ],
+    "categories": [
+      {
+        "category": "Malicious code",
+        "count": 2
+      },
+      {
+        "category": "Experimental code",
+        "count": 4
+      }
+    ]
+  }
+]
