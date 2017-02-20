@@ -5,6 +5,8 @@ autoIncrement.initialize(mongoose.connection);
 
 var bugsInstanceSchema = new mongoose.Schema({
     Id:{type:Number,  default: 0, unique:true},
+    APPID: String,
+    STATID: String,
     reportId: String,
     classId: String,
     methodName: String,

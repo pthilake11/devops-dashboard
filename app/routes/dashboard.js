@@ -10,30 +10,30 @@ module.exports = function(model) {
      });
     
     router.post('/bugs', function(req, res) {
-        var success = model.insertBugs();
+        var success = model.insertBugs(req.body.APPID, req.body.STATID);
         if(success) {
             res.send({code: 200, state:'success', description: 'data inserted successfully'} );
         } else {
             res.send({code: 500, state: 'failure', user: null, message: 'data insertion failed'});
         }
     });
+
+
+    router.get('/api/application/:APPID/STAT/:STATID/', function(req, res) {
     
-    router.get('/bugs', function(req, res) {
-        model.fetchBugs().then(function(response) {
+    if (req.params.STATID === 'MTRC103') {
+        model.fetchBugs(req.params.APPID, req.params.STATID).then(function(response) {
+            res.json(response);
+        });
+    } else if (req.params.STATID === 'MTRC101') {
+          model.fetchCoverage(req.params.APPID).then(function(response) {
             res.json(response);
         });
     });
 
-    router.get('/coverage', function(req, res) {
-        model.fetchCoverage().then(function(response) {
-            console.log(222, response)
-            res.json(response);
-        });
-
-    });
 
     router.post('/coverage', function(req, res) {
-        var success = model.insertCoverage();
+        var success = model.insertCoverage(req.body.APPID);
         if(success) {
             res.send({code: 200, state:'success', description: 'data inserted successfully'} );
         } else {

@@ -6,8 +6,8 @@ console.log('application running');
 
 module.exports = function(passport) {
     passport.serializeUser(function(user, done) {
-        console.log('serialize user');
-        return done(null, users._id);
+        console.log('serialize user', user);
+        return done(null, user._id);
     });
 
     passport.deserializeUser(function(id, done) {
