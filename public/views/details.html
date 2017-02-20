@@ -1,11 +1,13 @@
 <!-- public/views/home.html -->
-
+<div class="alert alert-danger text-center"" role="alert" ng-show="failure">
+    <strong>Oops!</strong>Something went wrong!!
+</div>
 <div class="jumbotron text-center">
     <h1>DevOps Dashboard</h1>
 
     <p>{{ copyright }}</p>
-    
 </div>
+
 
 <div data-ng-init="getDetails()"></div>
 
@@ -18,7 +20,7 @@
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">More features <span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li>
-                               <a ng-href='#' ng-click='fetchTrends($event)'>view Trends</a>
+                               <a ng-href='#' ng-click='fetchTrends($event)'>View Trends</a>
                             </li>
                         </ul>
                     </li>
@@ -57,11 +59,11 @@
 </div>
 </div>
 
-<div class="alert alert-info" role="alert">
+<div class="alert alert-info" role="alert" ng-show="showTrends">
    <strong>Historical Trends</strong>
 </div>
 
-<div class="container" ng-show="trends">
+<div class="container" ng-show="showTrends">
     <div class="row">
         <div class="col-sm-6">
             <div class="panel panel-primary">

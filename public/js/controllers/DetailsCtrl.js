@@ -1,16 +1,14 @@
 // public/js/controllers/MainCtrl.js
-angular.module('DetailsCtrl', []).controller('DetailsController',['$scope','$location','ApiService','$rootScope',function($scope,$location,ApiService,$rootScope) {
+angular.module('DetailsCtrl', []).controller('DetailsController',['$scope','$location','ApiService','$rootScope','$anchorScroll',function($scope,$location,ApiService,$rootScope,$anchorScroll) {
 
     $scope.applicationId = '';
-
     $scope.applications = [];
-
-    $scope.trends = false;
+    $scope.showTrends = false;
+    $scope.failure = false;
 
     //code to initialize data on details page
     $scope.getDetails = function()
     {
-        console.log($rootScope.userid);
         if($rootScope.userid === undefined) {
            $location.path("/");
         }
@@ -38,6 +36,9 @@ angular.module('DetailsCtrl', []).controller('DetailsController',['$scope','$loc
         ApiService.getStatsById(appId, statId).then(function(statistic) {
             unformatted = statistic.data;
             $scope.mapStats(statId, statname, unformatted);
+        },function(failure){
+            $scope.failure = true;
+            console.log('failure while retrieving stats data' + failure);
         });
     };
 
@@ -49,7 +50,14 @@ angular.module('DetailsCtrl', []).controller('DetailsController',['$scope','$loc
             unformatted = trend.data;
             trendId = 'T-' + trendId;
             $scope.mapStats(trendId,'', unformatted);
+            $scope.showTrends = true;
+            //$location.hash('trendsection');
+            //$anchorScroll();
+        },function(failure){
+            $scope.failure = true;
+            console.log('failure while retrieving trends data' + failure);
         });
+
     }
 
     //function handler to handle response from different metrics and route to specific
@@ -64,10 +72,12 @@ angular.module('DetailsCtrl', []).controller('DetailsController',['$scope','$loc
             case "MTRC101":
                 $scope.coveragetitle = statname;
                 $scope.generateCoverageReport(data);
+                break;
                 //do something with coverage report;
             case "T-MTRC101":
-                $scope.coverageTrend = 'code coverage historical plot';
+                $scope.coverageTrend = 'Code coverage build trends';
                 $scope.generateHistoricalCoverage(data);
+                break;
             default:
                 break;
         }
@@ -203,11 +213,11 @@ angular.module('DetailsCtrl', []).controller('DetailsController',['$scope','$loc
         var reportData =[];
         angular.forEach(data, function (element, key) {
             var plotdata = {label: '', value: 0};
-            plotdata.label = element.lastUpdated;
+            plotdata.label = element.reportNumber;
             plotdata.value = element.percentCovered;
             values.push(plotdata);
         });
-        var dataObj = {"key": "Cumulative Return", "values" : values};
+        var dataObj = {"key": "percent covered", "values" : values};
         reportData.push(dataObj);
         $scope._plotHistoricalCoverage(reportData);
 
@@ -229,21 +239,22 @@ angular.module('DetailsCtrl', []).controller('DetailsController',['$scope','$loc
                 y: function(d){return d.value;},
                 showValues: true,
                 valueFormat: function(d){
-                    return d3.format(',.4f')(d);
+                    return d3.format(',.2f')(d);
                 },
+                tooltips: false,
                 duration: 500,
                 xAxis: {
-                    axisLabel: 'Build date'
+                    axisLabel: 'Build Number'
                 },
                 yAxis: {
                     axisLabel: 'Code coverage percentage',
-                    axisLabelDistance: -10
+                    axisLabelDistance: -20
                 }
             }
         };
 
         $scope.trenddata = data;
-        $scope.trends = true;
+
 
     };
 }]);
