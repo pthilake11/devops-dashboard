@@ -10,15 +10,15 @@ module.exports = function(model) {
         res.send({state:'failure', user: null, message: 'invalid username'});
     });
     router.post('/bugs', function(req, res) {
-        var success = model.insertBugs();
+        var success = model.insertBugs(req.body.APPID, req.body.STATID);
         if(success) {
             res.send({code: 200, state:'success', description: 'data inserted successfully'} );
         } else {
             res.send({code: 500, state: 'failure', user: null, message: 'data insertion failed'});
         }
     });
-    router.get('/bugs', function(req, res) {
-        model.fetchBugs().then(function(response) {
+    router.get('/bugs/:APPID/STAT/:STATID/', function(req, res) {
+        model.fetchBugs(req.params.APPID, req.params.STATID).then(function(response) {
             res.json(response);
         });
     });

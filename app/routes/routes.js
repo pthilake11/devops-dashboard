@@ -80,9 +80,6 @@ module.exports = function(passport) {
 
     });
 
-    //  router.get('*', function(req, res) {
-    //     res.sendfile('./public/views/index.html'); // load our public/index.html file
-    // });
     router.post('/login',passport.authenticate('login', {
         successRedirect: '/api/success',
         failureRedirect: '/api/failure',
@@ -90,7 +87,7 @@ module.exports = function(passport) {
     }));
 
     router.get('/success', function(req, res) {
-        res.send({state:'success'} );
+        res.send({state:'success', user: req.user} );
     });
     router.get('/failure', function(req, res) {
         res.send({state:'failure', user: null, message: 'invalid username'});

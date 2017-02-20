@@ -7,15 +7,15 @@ var Promise = require('promise');
 var fileName = 'findbugs.xml';
 const path = require('path');
 
-module.exports.insertBugs = function() {
+module.exports.insertBugs = function(APPID, STATID) {
     return new Promise(function(resolve,reject) {
         parseXml('/bugs', function (response) {
-            return parseBugs(response);
+            return parseBugs(APPID, STATID, response);
         });
     });
 };
 
-var parseBugs = function(data) {
+var parseBugs = function(APPID, STATID, data) {
 
     var result = parseXml(fileName);
     var bugsInstances = data.BugCollection.BugInstance;
@@ -23,6 +23,8 @@ var parseBugs = function(data) {
     var bugInstance = 0;
     for (var bugInstance in bugsInstances) {
         var newBugs = new bugs();
+        newBugs.APPID = APPID;
+        newBugs.STATID = STATID;
         var classDetails = bugsInstances[bugInstance].Class[0];
         if (classDetails.$.primary == 'true') {
             newBugs.className = classDetails.$.classname;
@@ -52,9 +54,13 @@ var parseBugs = function(data) {
     return true;
 }
 // }
-module.exports.fetchBugs = function() {
+module.exports.fetchBugs = function(APPID, STATID) {
     return new Promise(function(resolve,reject) {
-        bugs.aggregate(([{$sort : {priority: 1}}]
+        bugs.aggregate(([
+                {$match: {APPID : APPID}},
+                {$match: {STATID: STATID}},
+                {$sort : {priority: 1}}
+            ]
         ), function(err, details){
             if (err) {
                 reject(err);
