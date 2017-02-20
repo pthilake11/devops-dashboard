@@ -2,14 +2,18 @@
 angular.module('LoginCtrl', []).controller('LoginController', ['$scope', '$location','$http','$rootScope',function($scope, $location,$http, $rootScope) {
 
     $scope.login = function() {
-       //@todo: integrate with proper authentication mechanism before redirect
-        $rootScope.authenticated = true;
-        $rootScope.userid = 'usr1001';// @todo: set this based on authenitcation response
-        $location.path( "/portfolio" );
-        /*console.log($scope.username,$scope.password);
-        $http.post('/api/login', $scope.user).success(function(data) {
-            //$rootScope.authenticated = $localStorage.authenticated = true;
-        });*/
+        $scope.user = { 'userName' : $scope.username, 'password' : $scope.password };
+        $http.post('/auth/login', $scope.user).then(function(auth) {
+        console.log(auth);
+            if( 'success' === auth.data.state) {
+               $rootScope.authenticated = true;
+               $rootScope.userid = 'usr1001';
+               $location.path( "/application/portfolio" );
+            };            
+        },function(failure) {
+            console.log('fail');
+        });
+     
     };
    
 }]);

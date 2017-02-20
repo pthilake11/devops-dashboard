@@ -1,16 +1,14 @@
 var express = require('express');
 var router = express.Router();
-
+var portfolioStub = require("./stubs/user-portfolios.json");
 
 module.exports = function(model) {
-    router.get('/success', function(req, res) {
-        console.log(1111);
-        res.send({state:'success', user: req.user ? req.user : null} );
-    });
-    router.get('/failure', function(req, res) {
-        console.log(222222);
-        res.send({state:'failure', user: null, message: 'invalid username'});
-    });
+
+    router.get('/api/portfolio/:userid', function(req, res) {
+
+         res.json(portfolioStub);
+     });
+    
     router.post('/bugs', function(req, res) {
         var success = model.insertBugs();
         if(success) {
@@ -19,6 +17,7 @@ module.exports = function(model) {
             res.send({code: 500, state: 'failure', user: null, message: 'data insertion failed'});
         }
     });
+    
     router.get('/bugs', function(req, res) {
         model.fetchBugs().then(function(response) {
             res.json(response);
@@ -42,6 +41,19 @@ module.exports = function(model) {
         }
 
     });
+    
+    router.get('/success', function(req, res) {
+         res.send({state:'success'} );
+     });
+     
+     router.get('/failure', function(req, res) {
+         res.send({state:'failure', user: null, message: 'invalid username'});
+     });
+     
+    
+     router.get('*', function(req, res) {
+         res.sendfile('./public/views/index.html'); // load our public/index.html file
+     });
 
     return router;
 }

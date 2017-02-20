@@ -2,22 +2,22 @@
     angular.module('appRoutes', []).config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
 
     $routeProvider
-        .when('/', {
+        .when('/application', {
             templateUrl: 'views/login.html',
             controller: 'LoginController'
         })
         
-        .when('/login', {
+        .when('/application/login', {
             templateUrl: 'views/login.html',
             controller: 'LoginController'
         })
         
-        .when('/portfolio', {
+        .when('/application/portfolio', {
             templateUrl: 'views/home.html',
             controller: 'MainController'
         })
         
-        .when('/details/:applicationId', {
+        .when('/application/details/:applicationId', {
             templateUrl: 'views/details.html',
             controller: 'DetailsController'
         });

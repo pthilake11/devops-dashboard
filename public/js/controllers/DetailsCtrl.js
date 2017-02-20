@@ -10,9 +10,9 @@ angular.module('DetailsCtrl', []).controller('DetailsController',['$scope','$loc
     $scope.getDetails = function()
     {
         if($rootScope.userid === undefined) {
-           $location.path("/");
+           $location.path("/application");
         }
-        var id = $location.path().split("/")[2] || "Unknown";
+        var id = $location.path().split("/")[3] || "Unknown";
 
         $scope.applicationId = id;
         $scope.applications = $rootScope.applications;

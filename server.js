@@ -42,8 +42,8 @@ app.use(express.static(__dirname + '/public'));
 app.use(cookieParser());
 app.use(passport.initialize());
 app.use(passport.session());
-app.use('/application', dashboard);
-app.use('/api', authRoutes);
+app.use('/', dashboard);
+app.use('/auth', authRoutes);
 
 // start app ===============================================
 // startup our app at http://localhost:1111
